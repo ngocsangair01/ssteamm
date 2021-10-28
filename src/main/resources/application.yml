@@ -1,0 +1,27 @@
+
+
+spring:
+  banner:
+    location: banner.txt
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-52-87-107-83.compute-1.amazonaws.com:5432/d9o02c11dmgcln
+    username: uqyfauxlkhlmry
+    password: 189cc6697438d3df1dbf4054bb3a00f8517d434a528377e6bc613a09cb3378cd
+  data:
+    cassandra:
+      schema-action: create_if_not_exists
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        enable_lazy_load_no_trans: true
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+
+cloudinary:
+  url: cloudinary://975898585293148:JJqFPcPDDF08WM4hL-K4ysUbXzo@none01
+
+
